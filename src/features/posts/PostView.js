@@ -9,7 +9,11 @@ import { useDispatch, useSelector } from 'react-redux'
 
 
 
+
+
 import { featchPosts } from './postesSlice';
+
+
 
 
 
@@ -23,7 +27,7 @@ const PostView = () => {
     const dispatch = useDispatch();
     useEffect(() =>{
         dispatch(featchPosts());
-    },[])
+    })
   return (
     <div>
         <h4>PostView</h4>
